@@ -5,19 +5,21 @@ class Flight:
         self.destination = destination
         self.duration = duration
 
+        #Print flight info as its made
+    def print_info(self):
+        print(f"Flight origin: {self.origin}")
+        print(f"Flight destination: {self.destination}")
+        print(f"Flight duration: {self.duration}")
+
 
 def main():
 
-    #Create Flight
-    f = Flight(origin="New York", destination="Paris", duration=540)
+    #Create Flight and print out its info
+    f1 = Flight(origin="New York", destination="Paris", duration=540)
+    f1.print_info()
 
-    #Change the Value of the variable
-    f.duration += 10
-
-    #print flight details
-    print(f.origin)
-    print(f.destination)
-    print(f.duration)
+    f2 = Flight(origin="Tokyo", destination="Shanghai", duration=185)
+    f2.print_info()
 
 if __name__ == "__main__":
     main()
