@@ -18,3 +18,5 @@ def main():
     print(f.origin)
     print(f.destination)
     print(f.duration)
+
+if __name__ == "__main__":
