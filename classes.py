@@ -1,7 +1,7 @@
 class Flight:
 
     def __init__(self, origin, destination, duration):
-        self.orign = origin
+        self.origin = origin
         self.destination = destination
         self.duration = duration
 
@@ -20,3 +20,4 @@ def main():
     print(f.duration)
 
 if __name__ == "__main__":
+    main()
